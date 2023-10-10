@@ -1,5 +1,5 @@
 {% set name = "pymovements" %}
-{% set version = "0.16.1" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pymovements-{{ version }}.tar.gz
-  sha256: 76a35b358ff2e35834b369c599c5e77e60d97040c267f3ac641558cf0cc57535
+  sha256: 5635542183041a09e2a44ed23f110632c6cc048b1da263db1656ed25fac74715
 
 build:
   noarch: python
@@ -16,16 +16,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - setuptools >=42
     - wheel
     - pip
   run:
-    - python >=3.7
+    - python >=3.9
     - matplotlib-base >=3.0.0
     - numpy >=1.10.0
     - pandas >1.0.0
-    - polars >=0.18.3,<0.19.0
+    - polars >=0.19.0,<0.20.0
     - pyarrow >=4.0.0,<12.0.0
     - scipy >=1.5.4
     - tqdm >=4.0.0
