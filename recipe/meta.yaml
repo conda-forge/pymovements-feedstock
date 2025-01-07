@@ -17,16 +17,16 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=42
+    - setuptools >=61.0.0
     - wheel
     - pip
   run:
     - python >={{ python_min }}
-    - matplotlib-base >=3.8.0,<3.9
-    - numpy >=1.22.4,<2
+    - matplotlib-base >=3.8.0,<3.10
+    - numpy >=1.22.4,<3
     - pandas >2.1.4,<3
-    - polars >=0.20.1,<0.20.3
-    - pyarrow >=11.0.0,<16
+    - polars >=1.8.2,<2
+    - pyarrow >=11.0.0,<19
     - pyopenssl >=16.0.0,<25.0.0
     - scipy >=1.8.0,<2
     - tqdm >=4.27.0,<5
