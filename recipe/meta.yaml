@@ -1,5 +1,5 @@
 {% set name = "pymovements" %}
-{% set version = "0.18.0" %}
+{% set version = "0.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pymovements-{{ version }}.tar.gz
-  sha256: 3f1cb00009ba83393daef6d0c2eec0eb06c3ea5bf81b5d3085033be0a0397a9a
+  sha256: 2a263a040cabe91ee25c13a543b528a52ee9d1a14b1295322755daa7531037db
 
 build:
   noarch: python
@@ -17,16 +17,16 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=42
+    - setuptools >=61.0.0
     - wheel
     - pip
   run:
     - python >={{ python_min }}
-    - matplotlib-base >=3.8.0,<3.9
-    - numpy >=1.22.4,<2
+    - matplotlib-base >=3.8.0,<3.10
+    - numpy >=1.22.4,<3
     - pandas >2.1.4,<3
-    - polars >=0.20.1,<0.20.3
-    - pyarrow >=11.0.0,<16
+    - polars >=1.8.2,<2
+    - pyarrow >=11.0.0,<19
     - pyopenssl >=16.0.0,<25.0.0
     - scipy >=1.8.0,<2
     - tqdm >=4.27.0,<5
