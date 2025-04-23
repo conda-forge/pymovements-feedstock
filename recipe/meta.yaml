@@ -1,5 +1,5 @@
 {% set name = "pymovements" %}
-{% set version = "0.21.0" %}
+{% set version = "0.21.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pymovements-{{ version }}.tar.gz
-  sha256: b349a60578511e78faa6709963d19d50109faee1489f2e3933371e444794ba17
+  sha256: 14418be2561408bef4d2e2c0c70f7aa9d0c9bd07ff975320efe9aced886736b4
 
 build:
   noarch: python
