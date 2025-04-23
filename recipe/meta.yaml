@@ -1,5 +1,5 @@
 {% set name = "pymovements" %}
-{% set version = "0.21.0" %}
+{% set version = "0.21.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pymovements-{{ version }}.tar.gz
-  sha256: b349a60578511e78faa6709963d19d50109faee1489f2e3933371e444794ba17
+  sha256: 14418be2561408bef4d2e2c0c70f7aa9d0c9bd07ff975320efe9aced886736b4
 
 build:
   noarch: python
@@ -26,13 +26,13 @@ requirements:
     - matplotlib-base >=3.8.0,<3.11
     - numpy >=1.22.4,<2.3
     - pandas >2.1.4,<2.3
-    - polars >=1.21.0,<1.25
+    - polars >=1.21.0,<1.28
     - pyarrow >=11.0.0,<19.1
     - pyopenssl >=16.0.0,<25.1
     - pyyaml >=6.0.2,<6.1
     - scipy >=1.8.0,<1.16
     - tqdm >=4.27.0,<4.68
-    - typing_extensions >=4.0.0,<4.13
+    - typing_extensions >=4.0.0,<4.14
 
 test:
   imports:
