@@ -3,7 +3,7 @@ About pymovements-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymovements-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/aeye-lab/pymovements
+Home: https://github.com/pymovements/pymovements
 
 Package license: MIT
 
