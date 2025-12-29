@@ -1,5 +1,5 @@
 {% set name = "pymovements" %}
-{% set version = "0.24.1" %}
+{% set version = "0.25.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pymovements-{{ version }}.tar.gz
-  sha256: 74b04e435b4fde21c774b87a305e19d42a0435054b69aa118248d81b5b315bce
+  sha256: 76ab902cb65d2ef933da45a869d1422d0807d06661d36bbec589e757a48102a4
 
 build:
   noarch: python
@@ -17,24 +17,26 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=61.0.0,<81
+    - setuptools >=61.0.0
     - wheel
     - pip
   run:
     - python >={{ python_min }}
-    - deprecated >=1.2.18,<1.4
-    - fastexcel >=0.13.0,<1.0
-    - matplotlib-base >=3.8.0,<3.11
-    - numpy >=1.22.4,<2.3
-    - pandas >2.1.4,<2.4
-    - polars >=1.31.0,<1.32
-    - pyarrow >=11.0.0,<21.1
-    - pyopenssl >=16.0.0,<25.4
-    - pyreadr >=0.5.2,<0.6
-    - pyyaml >=6.0.2,<6.1
-    - scipy >=1.8.0,<1.16
-    - tqdm >=4.27.0,<4.68
-    - typing_extensions >=4.0.0,<4.16
+    - deprecated >=1.2.18
+    - fastexcel >=0.13.0
+    - matplotlib-base >=3.8.0
+    - numpy >=1.22.4
+    - pandas >2.1.4
+    - polars >=1.34.0
+    - pyarrow >=11.0.0
+    - pyopenssl >=22.0.0
+    - pyparsing >=3.1.2
+    - pyreadr >=0.5.2
+    - pyyaml >=6.0.2
+    - scikit-learn >=1.2
+    - scipy >=1.8.0
+    - tqdm >=4.63.0
+    - typing_extensions >=4.0.0
 
 test:
   imports:
